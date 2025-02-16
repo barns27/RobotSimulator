@@ -1,0 +1,94 @@
+Test cases for Robot Simulator
+
+Functions:
+
+1. Loading of Screen
+Input: None
+Expected Output: The Robot Simulator screen is successfully loaded. Table, robot, input fields and buttons are shown. Robot is at position (1,1) facing East. 
+Steps: Go to the Exe folder and execute RobotSimulator.exe.
+
+2. Place
+
+Input: None
+Expected Output: Message prompt shows "Please input values on X, Y and Direction Facing to place robot on table.".
+Steps: Click the Place button.
+
+Input: X:2, Y:-
+Expected Output: Message prompt shows "Please input values on X, Y and Direction Facing to place robot on table.".
+Steps: Select value for X. Click the Place button.
+
+Input: X:-, Y:2
+Expected Output: Message prompt shows "Please input values on X, Y and Direction Facing to place robot on table.".
+Steps: Select value for Y. Click the Place button.
+
+Input: X:2, Y:2
+Expected Output: Robot is moved to position (2,2) facing North.
+Steps: Select value for X and Y. Click the Place button.
+
+Input: X:3, Y:3, DirectionFacing:South
+Expected Output: Robot is moved to position (3,3) facing South.
+Steps: Select value for X and Y. Click the Place button.
+
+3. Left
+
+Input: None
+Expected Output: Continuing the previous step, Direction Facing of Robot is changed to East.
+Steps: Click the Button Left.
+
+Input: None
+Expected Output: Continuing the previous step, Direction Facing of Robot is changed to North.
+Steps: Click the Button Left.
+
+Input: None
+Expected Output: Continuing the previous step, Direction Facing of Robot is changed to West.
+Steps: Click the Button Left.
+
+4. Right
+
+Input: None
+Expected Output: Continuing the previous step, Direction Facing of Robot is changed to North.
+Steps: Click the Button Right.
+
+Input: None
+Expected Output: Continuing the previous step, Direction Facing of Robot is changed to East.
+Steps: Click the Button Right.
+
+Input: None
+Expected Output: Continuing the previous step, Direction Facing of Robot is changed to South.
+Steps: Click the Button Right.
+
+5. Report
+
+Input: None
+Expected Output: Message Box is shown "Position: (3,3) \n Direction: South".
+Steps: Click the Report Button.
+
+6. Move
+
+Input: None
+Expected Output: Continuing the previous step, Robot is in position (3,2) facing South.
+Steps: Click the Move Button.
+
+Input: None
+Expected Output: Continuing the previous step, Robot is in position (3,1) facing South.
+Steps: Click the Move Button.
+
+Input: None
+Expected Output: Continuing the previous step, Message is shown "Robot cannot be moved beyond the table". Robot is in position (3,1) facing South.
+Steps: Click the Move Button.
+
+Input: None
+Expected Output: Continuing the previous step, Robot is in position (3,1) facing East.
+Steps: Click the Button Left.
+
+Input: None
+Expected Output: Continuing the previous step, Robot is in position (4,1) facing East.
+Steps: Click the Move Button.
+
+Input: None
+Expected Output: Continuing the previous step, Robot is in position (5,1) facing East.
+Steps: Click the Move Button.
+
+Input: None
+Expected Output: Continuing the previous step, Message is shown "Robot cannot be moved beyond the table". Robot is in position (5,1) facing East.
+Steps: Click the Move Button.
